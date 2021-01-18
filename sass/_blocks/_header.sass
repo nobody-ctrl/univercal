@@ -1,0 +1,60 @@
+.header
+    height: 545px
+    background-color: #262D33
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    &__container
+        height: 70px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__logo
+        &-link, &-img
+            display: block
+    &__navbar
+        display: flex
+        justify-content: space-between
+        &-link
+            font-family: Lato, sans-serif
+            font-weight: 900
+            font-size: 14px
+            line-height: 20px
+            color: #FFFFFF
+            text-decoration: none
+            margin-right: 30px
+            &:last-child
+                margin-right: 0
+            &-cyrillic
+                font-family: Lato-Cyrillic, sans-serif
+    &__search
+        &-form
+            position: relative
+        &-input
+            background-color: #656B70
+            border-radius: 10px
+            border: none
+            width: 263px
+            height: 39px
+            padding: 9px 65px 10px 25px
+            font-family: 'Lato', sans-serif
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            color: #ffffff
+            &::placeholder
+                font-family: 'Lato', sans-serif
+                font-weight: 400
+                font-size: 14px
+                line-height: 20px
+                color: #939699
+        &-icon
+            display: block
+        &-button
+            position: absolute
+            right: 26.3px
+            top: 10px
+            padding: 0
+            background-color: #656B70
+            border: none
