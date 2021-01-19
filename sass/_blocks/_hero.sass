@@ -1,0 +1,136 @@
+.hero
+    margin-top: 100px
+    &__container
+        height: 570px
+        width: 100%
+        display: flex
+        justify-content: space-between
+    &__right-block
+        min-width: 263px
+        width: 263px
+        background-color: #ffffff
+        border-radius: 0 10px 10px 0
+    &__left-block
+        flex-basis: 100%
+        position: relative
+        &-text
+            position: absolute
+            top: 245px
+            left: 55px
+    &__image
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 10px 0px 0px 10px
+.right-block
+    overflow-y: auto
+    overflow-x: hidden
+    scrollbar-color: grey grey
+    scrollbar-width: thin
+    &::-webkit-scrollbar
+        width: 5px
+        background-color: grey
+        border-radius: 0 10px 10px 0
+    &__link
+        text-decoration: none
+    &__header
+        border-bottom: 1px solid #D9DADB
+        padding-top: 20px
+        padding-left: 25px
+        padding-bottom: 19px
+    &__text
+        font-family: Lato-Cyrillic, sans-serif
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        text-transform: uppercase
+        color: #262D33
+        letter-spacing: 0.5px
+        &-header
+            font-family: Lato, sans-serif
+            font-weight: 900
+            font-size: 12px
+            line-height: 15px
+            text-transform: uppercase
+        &-descr
+            display: block
+            margin-top: 8px
+            font-family: Lato-Cyrillic, sans-serif
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            color: #4B5157
+            max-width: 213px
+    &__post
+        min-height: 100px
+        border-bottom: 1px solid #D9DADB
+        &-wrapper
+            padding-top: 17px
+            padding-left: 25px
+            padding-right: 25px
+            padding-bottom: 19px
+        &:last-child
+            border: none
+        &:hover
+            background-color: #F5F5F5
+.text-block
+    &__first
+        display: block
+        font-family: Lato, sans-serif
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        text-transform: uppercase
+        color: #4592FF
+    &__second
+        display: block
+        margin-top: 20px
+        font-family: Roboto Slab, serif
+        font-weight: 700
+        font-size: 40px
+        line-height: 50px
+        color: #FFFFFF
+        max-width: 598px
+    &__third
+        margin-top: 50px
+        background: #4592FF
+        border-radius: 20px
+        border: none
+        font-family: Lato-Cyrillic, sans-serif
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+        padding: 10px 20px
+        display: flex
+        align-items: center
+    &__img
+        margin-left: 8px
+        margin-right: 2px
+.avatar-block
+    position: absolute
+    top: 55px
+    left: 55px
+    &__img
+        border-radius: 50%
+    &__text-one
+        display: block
+        margin-left: 55px
+        font-family: Lato-Cyrillic, sans-serif
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+        margin-top: -41px
+        opacity: 0.85
+    &__text-two
+        font-family: Lato-Cyrillic, sans-serif
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        color: #FFFFFF
+        opacity: 0.4
+        margin-top: 2px
+        margin-left: 55px
+    &__link
+        text-decoration: none
