@@ -2,34 +2,173 @@
     .container
         width: 1100px
         border: 1px solid yellow
+    .avatar-block
+        top: 40px
 @media (max-width: 1200px)
     .container
         width: 1030px
         border: 1px solid green
+    .header
+        &__search
+            &-input
+                width: 200px
+                padding-right: 40px
+            &-button
+                right: 16.3px
+                top: 12px
+            &-icon
+                width: 15px
+                height: 15px
+    .text-block
+        &__second
+            font-size: 35px
+            max-width: 400px
 @media (max-width: 1130px)
     .container
         width: 960px
         border: 1px solid red
+    .header
+        &__search
+            &-input
+                width: 180px
+        &__navbar
+            &-link
+                margin-right: 25px
+    .hero
+        margin-top: 90px
 @media (max-width: 1060px)
     .container
         width: 890px
         border: 1px solid yellow
+    .header
+        &__search
+            &-input
+                width: 150px
+            &-button
+                right: 10.3px
+        &__navbar
+            &-link
+                margin-right: 20px
 @media (max-width: 950px)
     .container
         width: 880px
         border: 1px solid green
+    .header
+        &__logo-img
+            width: 140px
+    .hero
+        &__left
+            &-block-text
+                left: 35px
+    .hero
+        margin-top: 80px
 @media (max-width: 920px)
     .container
         width: 840px
         border: 1px solid yellow
+    .header
+        &__logo-img
+            width: 120px
+    .avatar-block
+        left: 35px
 @media (max-width: 890px)
     .container
         width: 93%
         border: 1px solid red
+    .header
+        &__search, &__navbar
+            display: none
+        &__logo-img
+            width: 150px
+        &__mobile-menu-hidden
+            display: block
+@media (max-width: 740px)
+    .hero
+        &__container
+            flex-direction: column
+            height: 962px
+        &__image
+            min-height: 400px
+            border-radius: 10px 10px 0 0
+        &__left-block
+            min-height: 400px
+            flex-basis: 400px
+            &-text
+                right: 35px
+                bottom: 10px
+        &__right-block
+            min-width: 100%
+            width: 100%
+            border-radius: 0 0 10px 10px
+    .text-block
+        &__third
+            margin-top: -50px
+            margin-left: auto
+        &__second
+            font-size: 30px
+    .right-block
+        &::-webkit-scrollbar
+            border-radius: 0 0 10px 0
+        &__text-descr
+            max-width: 100%
 @media (max-width: 690px)
     .container
         width: 87.5%
         border: 1px solid green
+    .hero
+        &__left-block
+            &-text
+                top: 190px
+    .text-block
+        &__third
+            margin-top: 15px
+            margin-left: 0
+@media (max-width: 600px)
+    .text-block
+        &__second
+            font-size: 25px
 @media (max-width: 400px)
+    .text-block
+        &__second
+            margin-top: 10px
     .container
-        border: 1px solid red
+        border: none
+    .mobile
+        &__navbar
+            &-link
+                margin-top: 20px
+                font-size: 16px
+        &__search
+            &-input
+                width: 230px
+                padding-right: 45px
+            &-icon
+                width: 15px
+                height: 15px
+            &-button
+                right: 16.3px
+                top: 12px
+@media (max-width: 393px)
+    .hero
+        &__left-block-text
+            top: 170px
+    .text-block
+        &__second
+            line-height: 40px
+@media (max-width: 363px)
+    .hero
+        &__left-block-text
+            top: 160px
+            left: 20px
+            right: 20px
+@media (max-width: 328px)
+    .hero
+        &__left-block-text
+            top: 130px
+@media (max-width: 300px)
+    .mobile
+        &__search
+            &-form
+                display: none
+.container
+    border: none

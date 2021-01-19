@@ -59,3 +59,73 @@
             padding: 0
             background-color: #656B70
             border: none
+    &__mobile-menu-hidden
+        display: none
+        cursor: pointer
+.menu
+    &__block
+        margin-top: 5px
+        width: 20px
+        height: 1px
+        background-color: #ffffff
+    &:first-child
+        margin-top: 0
+.mobile
+    display: none
+    position: absolute
+    top: 70px
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #262D33
+    z-index: 2
+    &__navbar
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 30px
+        &-link
+            font-family: Lato, sans-serif
+            font-weight: 700
+            font-size: 17px
+            line-height: 20px
+            color: #FFFFFF
+            text-decoration: none
+            margin-top: 25px
+            &:first-child
+                margin-top: 0px
+            &-cyrillic
+                font-family: Lato-Cyrillic, sans-serif
+    &-visible
+        display: block
+    &__search
+        &-form
+            position: relative
+            margin-bottom: 10px
+        &-input
+            background-color: #656B70
+            border-radius: 10px
+            border: none
+            width: 263px
+            height: 39px
+            padding: 9px 65px 10px 25px
+            font-family: 'Lato', sans-serif
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            color: #ffffff
+            &::placeholder
+                font-family: 'Lato', sans-serif
+                font-weight: 400
+                font-size: 14px
+                line-height: 20px
+                color: #939699
+        &-icon
+            display: block
+        &-button
+            position: absolute
+            right: 26.3px
+            top: 10px
+            padding: 0
+            background-color: #656B70
+            border: none

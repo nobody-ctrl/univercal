@@ -13,3 +13,7 @@ $(".right-block__text-header").each(function(i) {
     }
     rowCount++;
 });
+
+$('.menu').click(function(){
+    $('.mobile').toggleClass('mobile-visible');
+});

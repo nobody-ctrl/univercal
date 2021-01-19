@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Издательство Universal</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">  
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -39,10 +39,34 @@
                 </form>
             </div>
             <!-- /.header__search -->
+            <div class="header__mobile-menu-hidden menu">
+                <div class="menu__block"></div>
+                <div class="menu__block"></div>
+                <div class="menu__block"></div>
+            </div>
+            <!-- /.header__mobile-menu-hidden -->
         </div>
         <!-- /.container -->
     </header>
     <!-- /.header -->
+    <div class="mobile">
+        <div class="mobile__navbar">
+            <form action="#" class="mobile__search-form">
+                <input type="text" class="mobile__search-input" placeholder="Поиск">
+                <button class="mobile__search-button">
+                    <img src="img/search.svg" class="mobile__search-icon" alt="Icon: search">
+                </button>
+            </form>
+            <a href="#" class="mobile__navbar-link mobile__navbar-link-cyrillic">Статьи</a>
+            <a href="#" class="mobile__navbar-link mobile__navbar-link-cyrillic">Новости</a>
+            <a href="#" class="mobile__navbar-link mobile__navbar-link-cyrillic">Курсы</a>
+            <a href="#" class="mobile__navbar-link">HTML</a>
+            <a href="#" class="mobile__navbar-link">CSS</a>
+            <a href="#" class="mobile__navbar-link">JavaScript</a>
+            <a href="#" class="mobile__navbar-link">Web Design</a>
+        </div>
+        <!-- /.header__navbar -->
+    </div>
     <section class="hero">
         <div class="container hero__container">
             <div class="hero__left-block">
@@ -118,23 +142,23 @@
                 </div>
                 <!-- /.hero__post-block -->
 
-                <div class="right-block__post">
+                <!-- <div class="right-block__post">
                     <a href="#" class="right-block__link">
                         <div class="right-block__post-wrapper">
                             <span class="right-block__text-header">example</span>
                             <span class="right-block__text-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, maxime.</span>
                         </div>
                     </a>
-                </div>
+                </div> -->
                 <!-- /.hero__post-block -->
-                <div class="right-block__post">
+                <!-- <div class="right-block__post">
                     <a href="#" class="right-block__link">
                         <div class="right-block__post-wrapper">
                             <span class="right-block__text-header">some-thing</span>
                             <span class="right-block__text-descr">Возможности CSS Grid Layout , которые уже можно применять</span>
                         </div>
                     </a>
-                </div>
+                </div> -->
                 <!-- /.hero__post-block -->
             </div>
             <!-- /.hero__right-block -->
