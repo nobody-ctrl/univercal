@@ -9,10 +9,13 @@
         width: 555px
         background-color: #ffffff
         border-radius: 10px
+        &-block
+            margin-top: 20px
         &-avatar
             width: 30px
             height: 30px
             border-radius: 50%
+            margin-right: 10px
         &-devide
             width: 100%
             height: 1px
@@ -21,7 +24,6 @@
             padding-top: 15px
             padding-left: 35px
             display: flex
-            align-items: center
             justify-content: space-between
         &-header
             font-family: Lato-Cyrillic, sans-serif
@@ -50,7 +52,8 @@
                 margin-top: 25px
                 margin-bottom: 15px
         &-decr
-            width: 389px
+            margin-right: 9px
+            width: 395px
             max-height: 20px
             overflow: hidden
             text-overflow: ellipsis
@@ -67,12 +70,11 @@
                 font-size: 14px
                 line-height: 20px
                 color: #4B5157
-                margin-left: 5px
+                margin-left: 1px
         &-comment
             padding: 12px 35px 13px 35px
             display: flex
             align-items: center
-            justify-content: space-between
         &-comments
             display: flex
             align-items: center
@@ -220,8 +222,8 @@
     &__second
         padding-top: 12px
         padding-bottom: 13px
-        padding-left: 90px
-        padding-right: 90px
+        display: flex
+        justify-content: center
         &-block
             display: flex
             align-items: center
@@ -313,6 +315,8 @@
         overflow: hidden
         text-overflow: ellipsis
         white-space: nowrap
+        &-analog
+            width: 185px
     &__descr
         margin-top: 5px
         font-family: Lato-Cyrillic, sans-serif

@@ -9,6 +9,12 @@
             width: 220px
         &__text
             width: 140px
+    .others
+        &__first
+            width: 542px
+            &-img
+                height: 299px
+                width: 270px
 @media (max-width: 1200px)
     .container
         width: 1030px
@@ -33,6 +39,48 @@
             width: 210px
         &__text
             width: 140px
+    .grid
+        &-one
+            grid-column: 1 / 3
+        &-two
+            grid-column: 3 / 4
+        &-three
+            grid-row: 5 / 6
+            grid-column: 1 / 2
+        &-ten
+            grid-column: 3 / 4
+            grid-row: 5 / 6
+        &-four
+            grid-column: 2 / 3
+            grid-row: 5 / 6
+            margin-left: 20px
+            width: 90%
+    .forth
+        &__second
+            padding-right: 20px
+    .others
+        &__container
+            grid-template-columns: 263px auto 263px
+            grid-template-rows: 170px 170px 170px 170px 170px
+        &__first
+            width: 740px
+            &-comment
+                justify-content: space-between
+            &-decr
+                flex-basis: 100%
+    .media-one
+        width: 440px
+        width: 90%
+        margin-left: 20px
+    .grid-four
+        overflow-y: auto
+        overflow-x: hidden
+        scrollbar-color: grey grey
+        scrollbar-width: thin
+        &::-webkit-scrollbar
+            width: 5px
+            background-color: grey
+            border-radius: 0 10px 10px 0
 @media (max-width: 1130px)
     .container
         width: 960px
@@ -48,10 +96,15 @@
         margin-top: 90px
     .themes
         &__post
-            width: 180px
+            width: 190px
         &__text
-            width: 100px
+            width: 130px
             font-size: 13.5px
+        &__img
+            width: 50px
+            height: 50px
+    .others__first
+        width: 97%
 @media (max-width: 1060px)
     .container
         width: 890px
@@ -78,7 +131,9 @@
                 left: 35px
     .hero
         margin-top: 80px
-@media (max-width: 920px)
+    .media-one, .grid-four
+        margin-left: 17px
+@media (max-width: 930px)
     .container
         width: 840px
         border: 1px solid yellow
@@ -93,6 +148,9 @@
         &__text
             width: 100px
             font-size: 13.5px
+        &__container
+            padding-top: 15px
+            padding-bottom: 20px
 @media (max-width: 890px)
     .container
         width: 93%
@@ -111,13 +169,61 @@
             padding-left: 20px
             padding-right: 20px
         &__post
-            flex-basis: 48%
+            width: 100%
             justify-content: space-evenly
+        &__link
+            flex-basis: 48%
         &__text
             width: 200px
         &__line
             &:nth-last-child(4n)
                 display: none
+    .others
+        &__container
+            grid-template-columns: 5fr 7fr
+            column-gap: 20px
+            grid-template-rows: 170px 170px 170px 170px 170px 170px 170px 170px
+        &__first, &__second
+            width: 100%
+        &__second-second
+            justify-content: start
+        &__first
+            &-img
+                margin-left: 10px
+    .second
+        &-comment
+            &__text
+                margin-left: 15px
+    .grid
+        &-two
+            grid-column: 1 / 2
+            grid-row: 6 / 8
+        &-three
+            width: 100%
+            grid-column: 1 / 2
+        &-four
+            margin-left: 0
+            width: 100%
+        &-seven
+            grid-row: 7 / 8 
+            grid-column: 2 / 3
+        &-nine
+            grid-row: 6 / 7
+            grid-column: 2 / 3
+        &-ten
+            grid-row: 8 / 9
+            grid-column: 1 / 3
+            justify-self: center
+            background-color: #E5E5E5
+            padding: 0
+            height: 100px
+    .fifth
+        width: 100%
+    .media-one
+        width: 100%
+        margin-left: 0
+    .six
+        width: 100%
 @media (max-width: 740px)
     .hero
         &__container
@@ -162,20 +268,54 @@
         &__third
             margin-top: 15px
             margin-left: 0
-@media (max-width: 650px)
     .themes
-        &__post
+        &__container
+            padding-top: 25px
+            padding-bottom: 25px
+        &__link
             flex-basis: 100%
-            justify-content: space-evenly
-            margin-top: 15px
-        &__line
-            display: none
         &__text
-            width: 60%
+            width: 70%
+        &__line
+            display: block
+            height: 1px
+            width: 100%
+            margin-top: 15px
+            margin-bottom: 15px
+            &:nth-last-child(4n)
+                display: block
+@media (max-width: 650px)
+    .others
+        &__first
+            &-decr
+                width: 85%
+            &-img
+                width: 150px
+                height: 210px
+                margin-left: 10px
+    .others
+        &__container
+            display: block
+    .grid
+        &-one, &-two, &-three, &-four, &-five, &-seven, &-six, &-eight, &-nine, &-ten
+            width: 100%
+            margin-bottom: 30px
+    .third
+        &__list
+            height: 45px
+            width: 35px
 @media (max-width: 600px)
     .text-block
         &__second
             font-size: 25px
+@media (max-width: 550px)
+    .others
+        &__first
+            &-one
+                padding-left: 30px
+                padding-right: 30px
+            &-img
+                display: none
 @media (max-width: 400px)
     .text-block
         &__second
@@ -197,6 +337,10 @@
             &-button
                 right: 16.3px
                 top: 12px
+    .seven
+        &__icon
+            width: 35px
+            height: 35px
 @media (max-width: 393px)
     .hero
         &__left-block-text
@@ -209,10 +353,18 @@
         &__left-block-text
             left: 23px
             right: 23px
+    .six
+        &__title, &__title-analog
+            width: 90%
 @media (max-width: 335px)
     .hero
         &__left-block-text
             top: 130px
+@media (max-width: 315px)
+    .second-comment__meta
+        width: 80%
+        &-date
+            display: none
 @media (max-width: 300px)
     .mobile
         &__search
