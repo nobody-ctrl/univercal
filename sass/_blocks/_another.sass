@@ -1,0 +1,205 @@
+.another
+    background-color: #262D33
+    padding-top: 60px
+    padding-bottom: 60px
+    &__container
+        display: grid
+        grid-template-columns: 555px 263px 263px
+        grid-template-rows: 370px 170px
+        row-gap: 30px
+        justify-content: space-between
+    &__first
+        grid-column: 1 / 2
+        grid-row: 1 / 3
+        border-radius: 10px
+    &__second
+        grid-column: 2 / 4
+        grid-row: 1 / 2
+        background: url('../img/another-third.png')
+        background-color: #B4D1E0
+        border-radius: 10px
+        background-repeat: no-repeat
+        background-position: center right
+    &__third
+        grid-column: 2 / 3
+        grid-row: 2 / 3
+        text-decoration: none
+    &__forth
+        grid-column: 3 / 4
+        grid-row: 2 / 3
+        text-decoration: none
+    &__six
+        background: #FFFFFF
+        border-radius: 10px
+        width: 100%
+        height: 170px
+        padding: 25px 25px 30px 25px
+        position: relative
+        &-title
+            font-family: Roboto Slab
+            font-weight: 700
+            font-size: 16px
+            line-height: 25px
+            color: #262D33
+            width: 213px
+            overflow: hidden
+            text-overflow: ellipsis
+            white-space: nowrap
+        &-descr
+            margin-top: 5px
+            font-family: Lato-Cyrillic, sans-serif
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            color: #4B5157
+            height: 60px
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+            -webkit-line-clamp: 3
+            -webkit-box-orient: vertical
+        &-date
+            font-family: Lato-Cyrillic, sans-serif
+            font-weight: 400
+            font-size: 12px
+            line-height: 15px
+            color: #939699
+            position: absolute
+            bottom: 30px
+.swiper-container
+    height: 570px
+.swiper-pagination-bullets
+    bottom: 40px !important
+.swiper-pagination-bullet
+    background-color: #D9DADB !important
+    margin: 0 8.5px !important
+.swiper-pagination-bullet-active
+    background-color: #fff !important
+.first-slide, .third-slide, .fifth-slide
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-first.jpg')
+    background-size: cover
+    border-radius: 10px
+    background-position: center
+.second-slide, .forth-slide
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-second.jpg')
+    background-size: cover
+    border-radius: 10px
+    background-position: center
+.slide
+    &__title
+        font-family: Roboto Slab
+        font-weight: 700
+        font-size: 40px
+        line-height: 50px
+        color: #FFFFFF
+        text-align: center
+        width: 81.98%
+        display: block
+        margin: auto
+        margin-top: 30px
+    &__button
+        margin: auto
+        margin-top: 45px
+        padding: 10px 20px
+        background: #4592FF
+        border-radius: 20px
+        border: none
+        font-family: Lato-Cyrillic, sans-serif
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+        display: flex
+        align-items: center
+        &-number
+            font-family: Lato, sans-serif
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            color: #C5E4FC
+            margin-left: 8px
+    &__name
+        font-family: Lato-Cyrillic, sans-serif
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+        opacity: 0.85
+        display: block
+        text-align: center
+    &__icon
+        width: 20px
+        width: 20px
+        margin-right: 8px
+    &__avatar
+        width: 45px
+        height: 45px
+        border-radius: 50% 
+        display: block
+        margin: auto
+        margin-top: 7px
+        margin-bottom: 8px
+    &__how
+        font-family: Lato-Cyrillic, sans-serif
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        color: #FFFFFF
+        opacity: 0.4
+        display: block
+        text-align: center
+    &__cat
+        background: #3DC47E
+        border-radius: 3px
+        padding: 5px 12px
+        font-family: Lato-Cyrillic, sans-serif
+        font-weight: 400
+        font-size: 12px
+        line-height: 15px
+        color: #FFFFFF
+        margin-top: 18px
+        margin-left: 18.5px
+        display: inline-block
+.sec
+    padding: 35px
+    &__cat
+        font-family: Lato-Cyrillic, sans-serif
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: #6E99AE
+    &__title
+        margin-top: 20px
+        font-family: Roboto Slab
+        font-weight: 700
+        font-size: 25px
+        line-height: 30px
+        color: #262D33
+        width: 43.78%
+    &__descr
+        margin-top: 15px
+        font-family: Lato-Cyrillic, sans-serif
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        color: #4B5157
+        width: 42%
+    &__button
+        margin-top: 45px
+        background: #4592FF
+        border-radius: 20px
+        border: none
+        font-family: Lato-Cyrillic, sans-serif
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+        padding: 10px 20px
+        display: flex
+        align-items: center
+        margin-bottom: 50px
+    &__img
+        margin-left: 8px
+        margin-right: 2px

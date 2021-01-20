@@ -17,3 +17,14 @@ $(".right-block__text-header").each(function(i) {
 $('.menu').click(function(){
     $('.mobile').toggleClass('mobile-visible');
 });
+
+var mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: 'true'
+    },
+})
