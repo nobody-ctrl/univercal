@@ -139,6 +139,12 @@
     .news
         &__first
             width: 70%
+    .navbar
+        width: 135px
+    .footer
+        &__info
+            &-one
+                width: 60%
 @media (max-width: 1060px)
     .container
         width: 890px
@@ -157,6 +163,8 @@
             width: 68%
         &__post-img
             min-width: 260px
+    .navbar
+        width: 115px
 @media (max-width: 950px)
     .container
         width: 880px
@@ -294,6 +302,32 @@
             font-size: 30px
         &__form
             width: 400px
+    .message-box
+        width: 254px
+    .navbar
+        flex-basis: 26%
+        &:first-child
+            margin-bottom: 50px
+    .footer__navbar-block
+        flex-wrap: wrap
+        justify-content: space-evenly
+    .footer__item
+        font-size: 12px
+    .footer__links
+        width: 465px
+    .footer__rechts
+        &-link, &-icon
+            width: 30px
+            height: 30px
+    .footer
+        &__info
+            padding-bottom: 15px
+            flex-wrap: wrap
+            &-one, &-two
+                flex-basis: 100%
+                width: 100%
+            &-two
+                margin-top: 20px
 @media (max-width: 850px)
     .news
         &__first
@@ -351,6 +385,14 @@
             width: 100%
         &__post-img
             min-width: 200px
+    .footer
+        &__wrapper
+            flex-wrap: wrap
+            justify-content: center
+        &__links
+            flex-basis: 90%
+            margin-bottom: 30px
+
 @media (max-width: 690px)
     .container
         width: 87.5%
@@ -427,10 +469,17 @@
             row-gap: 10px
         &__third
             margin-top: -20px
+    .navbar
+        flex-basis: 33%
+    .footer__navbar-block
+        justify-content: space-between
 @media (max-width: 600px)
     .text-block
         &__second
             font-size: 25px
+    .footer
+        &__links
+            display: none
 @media (max-width: 550px)
     .others
         &__first
@@ -447,6 +496,16 @@
             display: none
         &__post-descr
             margin-left: 0
+    .navbar
+        flex-basis: 35%
+        &:first-child
+            margin-bottom: 50px
+        &:nth-last-child(2)
+            margin-top: 50px
+        &:last-child
+            margin-top: 50px
+    .footer__navbar-block
+        justify-content: space-evenly
 @media (max-width: 520px)
     .another
         &__second
@@ -461,8 +520,12 @@
             flex-direction: column
             width: 100%
         &__button
-            margin-top: 10px
+            margin-top: 30px
             margin-left: 0
+    .message-box
+        width: 203px
+    .navbar
+        flex-basis: 40%
 @media (max-width: 400px)
     .text-block
         &__second
@@ -525,6 +588,19 @@
     .hero
         &__left-block-text
             top: 130px
+    .navbar
+        flex-basis: 70%
+        margin-bottom: 30px
+        &:first-child
+            margin-top: 10px
+            margin-bottom: 30px
+        &:last-child
+            margin-top: 0
+            margin-bottom: 0
+        &:nth-last-child(2)
+            margin-top: 0
+    .footer__navbar-block
+        justify-content: center
 @media (max-width: 315px)
     .second-comment__meta
         width: 80%

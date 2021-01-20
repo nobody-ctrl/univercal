@@ -28,3 +28,13 @@ var mySwiper = new Swiper('.swiper-container', {
       clickable: 'true'
     },
 })
+
+$('.newsletter__form').validate({
+    errorClass: "message-box",
+    messages: {
+        email: {
+          required: "Please, email here!",
+          email: "Please, correct email!"
+        }
+    }    
+});
