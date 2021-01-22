@@ -62,24 +62,24 @@ $('.right-block__link').click(function(){
     var number = 0;
     if(headerColor == 'rgb(59, 189, 196)'){
         number = 0;
-        $('.hero__image').attr({'src' : '../img/hero-five.jpg'});
-        $('.avatar-block__img').attr({'src' : '../img/one.jpg'});
+        $('.hero__image').attr({'src' : 'img/hero-five.jpg'});
+        $('.avatar-block__img').attr({'src' : 'img/one.jpg'});
     }else if(headerColor == 'rgb(110, 153, 174)'){
         number = 1;
-        $('.hero__image').attr({'src' : '../img/hero-second.png'});
-        $('.avatar-block__img').attr({'src' : '../img/two.jpg'});
+        $('.hero__image').attr({'src' : 'img/hero-second.png'});
+        $('.avatar-block__img').attr({'src' : 'img/two.jpg'});
     }else if (headerColor == 'rgb(172, 142, 227)'){
         number = 2;
-        $('.hero__image').attr({'src' : '../img/hero-first.jpg'});
-        $('.avatar-block__img').attr({'src' : '../img/three.jpg'});
+        $('.hero__image').attr({'src' : 'img/hero-first.jpg'});
+        $('.avatar-block__img').attr({'src' : 'img/three.jpg'});
     }else if(headerColor == 'rgb(255, 163, 77)'){
         number = 3;
-        $('.hero__image').attr({'src' : '../img/hero-four.jpg'});
-        $('.avatar-block__img').attr({'src' : '../img/four.jpg'});
+        $('.hero__image').attr({'src' : 'img/hero-four.jpg'});
+        $('.avatar-block__img').attr({'src' : 'img/four.jpg'});
     }else{
         number = 4;
-        $('.hero__image').attr({'src' : '../img/hero-first.jpg'});
-        $('.avatar-block__img').attr({'src' : '../img/five.jpg'});
+        $('.hero__image').attr({'src' : 'img/hero-first.jpg'});
+        $('.avatar-block__img').attr({'src' : 'img/five.jpg'});
     }
     $('.avatar-block__text-one').text(names[number]);
     $('.avatar-block__text-two').text(titles[number]);
