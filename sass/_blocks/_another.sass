@@ -75,13 +75,28 @@
     margin: 0 8.5px !important
 .swiper-pagination-bullet-active
     background-color: #fff !important
-.first-slide, .third-slide, .fifth-slide
+.first-slide
     background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-first.jpg')
     background-size: cover
     border-radius: 10px
     background-position: center
-.second-slide, .forth-slide
+.second-slide
     background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-second.jpg')
+    background-size: cover
+    border-radius: 10px
+    background-position: center
+.third-slide
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-three.jpg')
+    background-size: cover
+    border-radius: 10px
+    background-position: center
+.forth-slide
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-four.jpg')
+    background-size: cover
+    border-radius: 10px
+    background-position: center
+.fifth-slide
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-five.jpg')
     background-size: cover
     border-radius: 10px
     background-position: center
@@ -111,6 +126,8 @@
         color: #FFFFFF
         display: flex
         align-items: center
+        &:hover
+            background-color: #95c0fc
         &-number
             font-family: Lato, sans-serif
             font-weight: 400
@@ -202,6 +219,8 @@
         align-items: center
         margin-bottom: 50px
         margin-left: 2.5px
+        &:hover
+            background-color: #95c0fc
     &__img
         margin-left: 8px
         margin-right: 2px

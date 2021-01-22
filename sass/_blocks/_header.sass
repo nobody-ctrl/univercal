@@ -29,6 +29,8 @@
                 margin-right: 0
             &-cyrillic
                 font-family: Lato-Cyrillic, sans-serif
+            &:hover
+                color: #4592FF
     &__search
         &-form
             position: relative
@@ -39,11 +41,12 @@
             width: 263px
             height: 39px
             padding: 9px 65px 10px 25px
-            font-family: 'Lato', sans-serif
             font-weight: 400
             font-size: 14px
             line-height: 20px
             color: #ffffff
+            font-weight: 400
+            font-family: Lato-Cyrillic, sans-serif
             &::placeholder
                 font-family: 'Lato', sans-serif
                 font-weight: 400
@@ -84,6 +87,7 @@
         flex-direction: column
         align-items: center
         margin-top: 30px
+        padding-bottom: 40px
         &-link
             font-family: Lato, sans-serif
             font-weight: 700
@@ -98,6 +102,13 @@
                 font-family: Lato-Cyrillic, sans-serif
     &-visible
         display: block
+        overflow-y: auto
+        overflow-x: hidden
+        scrollbar-color: white white
+        scrollbar-width: thin
+        &::-webkit-scrollbar
+            width: 5px
+            background-color: white
     &__search
         &-form
             position: relative
@@ -109,13 +120,13 @@
             width: 263px
             height: 39px
             padding: 9px 65px 10px 25px
-            font-family: 'Lato', sans-serif
+            font-family: Lato-Cyrillic, sans-serif
             font-weight: 400
             font-size: 14px
             line-height: 20px
             color: #ffffff
             &::placeholder
-                font-family: 'Lato', sans-serif
+                font-family: Lato-Cyrillic, sans-serif
                 font-weight: 400
                 font-size: 14px
                 line-height: 20px

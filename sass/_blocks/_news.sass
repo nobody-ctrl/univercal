@@ -37,6 +37,11 @@
         position: absolute
         right: 25px
         top: 25px
+        z-index: 10
+        cursor: pointer
+        &-color
+            &-red
+                 fill: #FF4F52
 .post
     &__type
         font-family: Lato-Cyrillic, sans-serif
@@ -154,10 +159,13 @@
         display: flex
         justify-content: space-between
         align-items: center
+        &-link
+            text-decoration: none
     &__img
         width: 60px
         height: 60px
         margin-right: 10px
+        object-fit: cover
     &__descr
         font-family: Lato-Cyrillic, sans-serif
         font-weight: 400

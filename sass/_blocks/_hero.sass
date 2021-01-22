@@ -34,6 +34,7 @@
         border-radius: 0 10px 10px 0
     &__link
         text-decoration: none
+        cursor: pointer
     &__header
         border-bottom: 1px solid #D9DADB
         padding-top: 20px
@@ -95,6 +96,11 @@
         line-height: 50px
         color: #FFFFFF
         max-width: 598px
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 2
+        -webkit-box-orient: vertical
     &__third
         margin-top: 50px
         background: #4592FF
@@ -108,6 +114,8 @@
         padding: 10px 20px
         display: flex
         align-items: center
+        &:hover
+            background-color: #95c0fc
     &__img
         margin-left: 8px
         margin-right: 2px
@@ -117,6 +125,8 @@
     left: 55px
     &__img
         border-radius: 50%
+        width: 45px
+        height: 45px
     &__text-one
         display: block
         margin-left: 55px
