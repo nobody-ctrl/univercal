@@ -79,15 +79,17 @@
     top: 70px
     left: 0
     right: 0
-    bottom: 0
+    bottom: -80px
     background-color: #262D33
     z-index: 2
+    overflow: auto
     &__navbar
         display: flex
         flex-direction: column
         align-items: center
         margin-top: 30px
-        padding-bottom: 40px
+        margin-bottom: 0px
+        padding-bottom: 80px
         &-link
             font-family: Lato, sans-serif
             font-weight: 700
@@ -100,15 +102,11 @@
                 margin-top: 0px
             &-cyrillic
                 font-family: Lato-Cyrillic, sans-serif
+            &:last-child
+                margin-bottom: 40px
     &-visible
         display: block
         overflow-y: auto
-        overflow-x: hidden
-        scrollbar-color: white white
-        scrollbar-width: thin
-        &::-webkit-scrollbar
-            width: 5px
-            background-color: white
     &__search
         &-form
             position: relative
