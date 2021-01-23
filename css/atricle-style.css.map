@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,AAAC,CACJ,MAAM,CAAE,IAAI,CACZ,gBAAgB,CAAE,OAAO,CAAG",
+    "sources": [
+        "../sass/atricle-style.sass"
+    ],
+    "names": [],
+    "file": "atricle-style.css"
+}

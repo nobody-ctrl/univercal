@@ -98,9 +98,11 @@
             column-gap: 30px
             row-gap: 30px
             grid-template-rows: 555px 370px 170px
+            justify-items: stretch
         &__first
             grid-column: 1 / 3
             grid-row: 1 / 2
+            width: 100%
         &__second
             grid-column: 1 / 3
             grid-row: 2 / 3
@@ -189,6 +191,12 @@
         color: #4B5157
     .footer__item:hover
         color: #262D33
+    .modal
+        &__button:hover
+            background-color: #4592FF
+        &__dialog
+            padding-left: 30px
+            padding-right: 30px
 @media (max-width: 950px)
     .container
         width: 880px
@@ -352,6 +360,9 @@
                 width: 100%
             &-two
                 margin-top: 20px
+    .modal
+        &__dialog
+            width: 480px
 @media (max-width: 850px)
     .news
         &__first
@@ -495,12 +506,15 @@
             margin-top: -20px
     .footer__navbar-block
         justify-content: space-between
+    .modal
+        &__dialog
+            width: 80%
 @media (max-width: 600px)
     .text-block
         &__second
             font-size: 25px
     .footer
-        &__links
+        &__item-another
             display: none
 @media (max-width: 550px)
     .others
@@ -528,6 +542,10 @@
             margin-top: 50px
     .footer__navbar-block
         justify-content: space-evenly
+    .modal
+        &__dialog
+            padding-left: 30px
+            padding-right: 30px
 @media (max-width: 520px)
     .another
         &__second
@@ -544,8 +562,36 @@
         &__button
             margin-top: 30px
             margin-left: 0
+        &__input
+            width: 70%
     .message-box
-        width: 203px
+        width: 70%
+    .footer
+        &__links
+            flex-direction: column
+        &__item
+            margin-top: 20px
+            &:first-child
+                margin-top: 0
+    .modal
+        &__title
+            font-size: 16px
+        &__input
+            height: 45px
+        &__dialog
+            padding-left: 25px
+            padding-right: 25px
+    .message-box-modal
+        font-size: 14px
+@media (max-width: 400px)
+    .modal
+        &__dialog
+            width: 85%
+    .newsletter
+        &__input
+            width: 80%
+    .message-box
+        width: 80%
 @media (max-width: 400px)
     .text-block
         &__second
@@ -635,5 +681,21 @@
     .sec
         &__button
             display: none
+@media (max-height: 570px)
+    .modal
+        &__dialog
+            transform: translate(-50%, 0%)
+            top: 40px
+            height: 100%
+            overflow-y: auto
+            overflow-x: hidden
+            scrollbar-color: grey grey
+            scrollbar-width: thin
+            &::-webkit-scrollbar
+                width: 5px
+                background-color: grey
+                border-radius: 0 10px 10px 0
+        &__button-and-info
+            margin-bottom: 60px
 .container
     border: none

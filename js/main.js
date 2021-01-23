@@ -21,6 +21,8 @@ $('.menu').click(function(){
 
 var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
+    observer: true,
+    observeParents: true,
     lazy: true,
     autoplay: {
         delay: 3000,
@@ -83,4 +85,34 @@ $('.right-block__link').click(function(){
     }
     $('.avatar-block__text-one').text(names[number]);
     $('.avatar-block__text-two').text(titles[number]);
+});
+
+$('.modal-call').click(function(){
+    $('.modal__overlay').addClass('modal__overlay--visible');
+    $('.modal__dialog').addClass('modal__dialog--visible');
+    $('body').addClass('body-overflow-hidden');
+});
+$('.modal__close').click(function(){
+    $('.modal__overlay').removeClass('modal__overlay--visible');
+    $('.modal__dialog').removeClass('modal__dialog--visible');
+    $('body').removeClass('body-overflow-hidden');
+});
+
+$(document).ready(function(){
+    $('.form-validation').each( function() {
+      $(this).validate({
+        errorClass: "message-box-modal",
+        ignore: ".modal__checkbox-box",
+        messages: {
+          name: {
+            required: "Please, specify your name",
+            minlength: "At least 2 letters please!"
+          },
+          email: {
+            required: "Your email is required",
+            email: "Please, name@domain.com",
+          },
+        },
+      });
+    });
 });

@@ -1,0 +1,146 @@
+.modal
+    font-family: Lato-Cyrillic, sans-serif
+    &__overlay
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(40, 47, 54, 0.8)
+        z-index: 3100
+        visibility: hidden
+        transition: opacity 0.2s
+        &--visible
+            visibility: visible
+            opacity: 1
+    &__dialog
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 360px
+        padding: 30px 35px 40px 35px 
+        background-color: #ffffff
+        z-index: 3101
+        border-radius: 10px
+        visibility: hidden
+        opacity: 0
+        transition: opacity 0.2s
+        &--visible
+            visibility: visible
+            opacity: 1
+    &__close
+        position: absolute
+        right: 15px
+        top: 15px
+        text-decoration: none
+        cursor: pointer
+    &__input
+        width: 100%
+        background-color: white
+        border: 1px solid #D9DADB
+        border-radius: 5px
+        padding: 10px 15px
+        height: 40px
+        font-family: Lato-Cyrillic, sans-serif
+        font-size: 14px
+        line-height: 20px
+        font-weight: 400
+        color: #262D33
+        font-family: Lato-Cyrillic, sans-serif
+    &__theme
+        width: 100%
+        position: relative
+        &-select
+            background-color: white
+            width: 100%
+            border: 1px solid #D9DADB
+            border-radius: 5px
+            padding: 10px 15px
+            height: 40px
+            font-family: Lato-Cyrillic, sans-serif
+            font-size: 14px
+            line-height: 20px
+            font-weight: 400
+            color: #262D33
+            appearance: none
+        &::before
+            content: url('../img/arrow-select.svg')
+            position: absolute
+            right: 15px
+            top: 10px
+            pointer-events: none
+    &__message
+        border: 1px solid #D9DADB
+        background-color: white
+        border-radius: 5px
+        padding: 10px 15px
+        width: 100%
+        height: 120px
+        font-family: Lato-Cyrillic, sans-serif
+        font-size: 14px
+        line-height: 20px
+        font-weight: 400
+        color: #262D33
+        font-family: Lato-Cyrillic, sans-serif
+        resize: none
+    &__button
+        background: #4592FF
+        border-radius: 20px
+        border: none
+        font-family: Lato-Cyrillic, sans-serif
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+        padding: 10px 25px
+        display: flex
+        align-items: center
+        margin-top: 30px
+        &:hover
+            background-color: #95c0fc
+    &__title
+        font-family: Roboto Slab
+        font-weight: 700
+        font-size: 20px
+        line-height: 25px
+        color: #262D33
+        margin: 0
+    &__label
+        font-family: Lato-Cyrillic, sans-serif
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: #262D33
+        margin-top: 15px
+        margin-bottom: 5px
+        display: block
+        &:first-child
+            margin-top: 25px
+        &-checkbox
+            font-family: Lato-Cyrillic, sans-serif
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            color: #4B5157
+            display: flex
+            &::before
+                content: ''
+                background-color: #4592FF
+                border-radius: 3px
+                margin-right: 10px
+                width: 20px
+                height: 20px
+                display: inline-block
+    &__checkbox
+        margin-top: 15px
+        display: flex 
+        position: relative
+        &-box
+            visibility: hidden
+            position: absolute
+            left: 0
+    &__checkbox-box:checked + &__label-checkbox::before
+        background-image: url('../img/clicked.svg')
+        background-position: center center
+        background-repeat: no-repeat
