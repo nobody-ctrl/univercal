@@ -88,3 +88,7 @@ $('.comments__opinion-form').validate({
       }
   }    
 });
+
+$('.error__button').click(function(){
+  window.location.href = "https://anastasia-petrova.com/universal/index.html";
+});

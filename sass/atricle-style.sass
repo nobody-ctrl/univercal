@@ -31,7 +31,7 @@ body
 .mains
     padding-left: 97px
     padding-right: 97px
-    padding-top: 63px
+    padding-top: 60px
     padding-bottom: 72px
     display: flex
     flex-direction: column
@@ -76,8 +76,10 @@ body
             margin-left: 0
         &:last-child
             margin-left: 20px
+        &:hover
+            color: #4592FF
     &__title
-        margin-top: 52px
+        margin-top: 50px
         max-width: 750px
         font-family: Roboto Slab
         font-weight: 700
@@ -129,7 +131,7 @@ body
     &__paragraph
         margin: 0
         margin-left: 97px
-        max-width: 623px
+        max-width: 620px
         font-family: Lato-Cyrillic, sans-serif
         font-weight: 400
         font-size: 18px
@@ -156,7 +158,7 @@ body
             margin-bottom: 20px
         &-material
             width: 100%
-            margin-bottom: 15px
+            margin-bottom: 11px
         &-name
             font-family: Roboto Slab
             font-weight: 700
@@ -186,15 +188,30 @@ body
             width: 41px
         &-meta
             display: flex
-    &__letter
-        float: left
-        padding-right: 10px
-        padding-bottom: 0
-        margin-top: 7px
+        &-first::first-letter
+            font-family: Lato-Cyrillic, sans-serif
+            font-size: 100px
+            font-weight: 400
+            line-height: 75px
+            color: #4592FF
+            float: left
+            padding: 0
+            margin: 0
+            padding-right: 10px
+            padding-top: 7px
+            padding-bottom: 8px
+            margin-left: -7px
+            font-weight: 800
+            display: inline-block
     &__title
-        margin-top: 45px
+        margin-top: 15px
         margin-bottom: 30px
         margin-left: 97px
+        font-family: Roboto Slab
+        font-weight: 700
+        font-size: 25px
+        line-height: 30px
+        color: #262D33
     &__slider
         margin-top: 15px
         margin-bottom: 45px
@@ -238,7 +255,7 @@ body
             font-size: 14px
             line-height: 20px
             color: #262D33
-            margin-bottom: 20px
+            margin-bottom: 19px
     &__avatar
         width: 90px
         height: 90px
@@ -253,6 +270,8 @@ body
         font-size: 14px
         line-height: 20px
         color: #262D33
+        &:hover
+            color: #4592FF
     &__slider
         height: 625px
         width: 100%
@@ -271,13 +290,13 @@ body
             justify-content: space-between
             &-one
                 padding: 25px 35px
-
-                font-family: Lato-Cyrillic, sans-serif
-                font-weight: 400
-                font-size: 14px
-                line-height: 20px
-                color: #4B5157
                 &-one
+                    font-family: Lato-Cyrillic, sans-serif
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 20px
+                    color: #4B5157
+
                     overflow: hidden
                     text-overflow: ellipsis
                     display: -webkit-box
@@ -330,8 +349,9 @@ body
         margin-left: 97px
         padding-top: 15px
         padding-bottom: 60px
+        display: flex
         &-tag
-            padding: 5px 15px
+            padding: 4px 14px
             font-family: Lato-Cyrillic, sans-serif
             font-weight: 900
             font-size: 14px
@@ -364,6 +384,7 @@ body
         &-buttons
             margin-top: 25px
             display: flex
+            margin-left: 2px
         &-button
             margin-right: 14px
             background: #4592FF
@@ -404,6 +425,7 @@ body
             height: 60px !important
             width: 60px !important
             left: 35px !important
+            margin-top: -30px !important
             &::after
                 content: url('../img/article-slide-prev.svg') !important
                 height: 60px
@@ -412,6 +434,7 @@ body
             height: 60px !important
             width: 60px !important
             right: 35px !important
+            margin-top: -30px !important
             &::after
                 content: url('../img/article-slide-next.svg') !important
                 height: 60px
@@ -436,7 +459,7 @@ body
         font-size: 16px
         line-height: 25px
         color: #262D33
-        margin-top: 15px
+        margin-top: 11px
         margin-bottom: 15px
         width: 100%
     &__views, &__comments
@@ -477,7 +500,7 @@ body
         justify-content: space-between
         margin-bottom: 29px
     &__add
-        padding: 10px 20px
+        padding: 9px 19px
         border: 1px solid #D9DADB
         border-radius: 20px
         display: flex
@@ -489,6 +512,13 @@ body
         font-size: 14px
         line-height: 20px
         color: #262D33
+        &:hover
+            background-color: #4592FF
+            color: #BCBFC2
+    &__load
+        &:hover
+            background-color: #4592FF
+            color: #BCBFC2
     &__icon
         width: 20px
         height: 20px
@@ -507,6 +537,10 @@ body
             display: none
         &-visible
             display: flex
+        &-three .comments__descr-comment
+            margin-bottom: 45px
+        &-two
+            margin-left: 90px
     &__avatar
         width: 75px
         height: 75px
@@ -515,6 +549,7 @@ body
         &-meta
             display: flex
             align-items: center
+            flex-wrap: wrap
             &-name
                 font-family: Roboto Slab
                 font-weight: 700
@@ -560,16 +595,19 @@ body
                 font-size: 12px
                 line-height: 15px
                 color: #3DC47E
-                width: 71px
                 display: flex
                 align-items: center
-                justify-content: space-between
+            &-icon
+                margin-right: 10px
+                &:last-child
+                    margin-right: 0
+                    margin-left: 10px
     &__load
         border: 1px solid #D9DADB
         border-radius: 25px
         margin-bottom: 60px
-        padding-top: 15px
-        padding: 15px
+        padding-top: 14px
+        padding-bottom: 14px
         text-decoration: none
 
         font-family: Lato-Cyrillic, sans-serif
@@ -585,13 +623,14 @@ body
             width: 15px
             height: 15px
             margin-right: 7px
+            margin-left: 25px
     &__opinion
         width: 100%
         height: 290px
         background-color: #F5F5F5
         margin-bottom: 30px
         border-radius: 10px
-        padding: 30px 40px 35px 40px
+        padding: 30px 40px 35px 30px
 
         display: flex
         &-title
@@ -696,16 +735,31 @@ body
             top: 90px
             left: 100%
             transform: translate(-30px, 0)
-@media (max-width: 980px)
+@media (max-width: 992px)
+    .header__navbar
+        &-link:hover
+            color: #939699
+    .mains
+        &__link:hover
+            color: #ffffff
     .comments
         &__opinion
             &-button
                 &:hover
                     background-color:  #4592FF
+        &__add:hover, &__load:hover
+            background-color: #fff
+            color: #262D33
     .text
         &__repost
             &-button:hover
                 background-color: #4592FF
+    .text
+        &__tags-tag:hover
+            background-color: #ffffff
+            color: #262D33
+        &__link:hover
+            color: #262D33
 @media (max-width: 950px)
     .mains
         padding-left: 57px

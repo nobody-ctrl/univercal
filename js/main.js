@@ -116,3 +116,10 @@ $(document).ready(function(){
       });
     });
 });
+
+$('.money__button').click(function(){
+    window.location.href = "https://anastasia-petrova.com/universal/article.html";
+});
+$('.text-block__third').click(function(){
+    window.location.href = "https://anastasia-petrova.com/universal/article.html";
+});
