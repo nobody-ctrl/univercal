@@ -83,7 +83,7 @@ var mySwiper = new Swiper('.swiper-container', {
 $('.comments__load').click(function(){
   $('.comments__comment-hide').toggleClass('comments__comment-visible');
   var t = $('.comments__load-text').text();
-  var thisstring = new String("загрузить еще");
+  var thisstring = String("загрузить еще");
   if (t.valueOf() == thisstring.valueOf()){
     $('.comments__load-text').text("скрыть");
   }else{
