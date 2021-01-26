@@ -33,6 +33,19 @@ $('.modal__close').click(function(){
     $('.modal__dialog').removeClass('modal__dialog--visible');
     $('body').removeClass('body-overflow-hidden');
 });
+$('.modal__overlay').click(function(){
+  $('.modal__overlay').removeClass('modal__overlay--visible');
+  $('.modal__dialog').removeClass('modal__dialog--visible');
+  $('body').removeClass('body-overflow-hidden');
+});
+
+$(document).keyup(function(e) {
+  if (e.key === "Escape") {
+      $('.modal__overlay').removeClass('modal__overlay--visible');
+      $('.modal__dialog').removeClass('modal__dialog--visible');
+      $('body').removeClass('body-overflow-hidden');
+ }
+});
 
 $(document).ready(function(){
     $('.form-validation').each( function() {
