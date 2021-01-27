@@ -17,8 +17,8 @@ $('.newsletter__form').validate({
     errorClass: "message-box",
     messages: {
         email: {
-          required: "Please, email here!",
-          email: "Please, correct email!"
+          required: "Пожалуйста, Ваш email!",
+          email: "Введите правильный email!"
         }
     }    
 });
@@ -73,12 +73,18 @@ $(document).ready(function(){
       ignore: ".modal__checkbox-box",
       messages: {
         name: {
-          required: "Please, specify your name",
-          minlength: "At least 2 letters please!"
+          required: "Введите ваше имя!",
+          minlength: "Как минимум 2 буквы!"
         },
-        email: {
-          required: "Your email is required",
-          email: "Please, name@domain.com",
+        emails: {
+          required: "Введите почту!",
+          email: "Образец: name@domain.com",
+        },
+        theme: {
+            required: "Выберите тему!",
+        },
+        message: {
+          required: "Введите сообщение!",
         },
       },
     });
@@ -116,8 +122,8 @@ $('.comments__opinion-form').validate({
   errorClass: "message-box-modal",
   messages: {
       message: {
-        required: "Please, message here!",
-        minlength: "Please, at least 100 letters!"
+        required: "Введите сообщение!",
+        minlength: "Нужно как минимум 100 букв!"
       }
   }    
 });

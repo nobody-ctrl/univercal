@@ -42,8 +42,8 @@ $('.newsletter__form').validate({
     errorClass: "message-box",
     messages: {
         email: {
-          required: "Please, email here!",
-          email: "Please, correct email!"
+          required: "Пожалуйста, Ваш email!",
+          email: "Введите правильный email!"
         }
     }    
 });
@@ -140,12 +140,18 @@ $(document).ready(function(){
         ignore: ".modal__checkbox-box",
         messages: {
           name: {
-            required: "Please, specify your name",
-            minlength: "At least 2 letters please!"
+            required: "Введите ваше имя!",
+            minlength: "Как минимум 2 буквы!"
           },
-          email: {
-            required: "Your email is required",
-            email: "Please, name@domain.com",
+          emails: {
+            required: "Введите почту!",
+            email: "Образец: name@domain.com",
+          },
+          theme: {
+              required: "Выберите тему!",
+          },
+          message: {
+            required: "Введите сообщение!",
           },
         },
       });
@@ -236,5 +242,7 @@ $(document).ready(function(){
             $('.forth-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('./img/another-four.jpg')"});
             $('.fifth-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('./img/another-five.jpg')"});
         }, 3000);
-    
+    $('.others__first-comment').click(function(){
+        window.location.href = "https://anastasia-petrova.com/universal/article.html#comments";
+    })
 });
