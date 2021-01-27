@@ -111,6 +111,28 @@ $(document).keyup(function(e) {
    }
 });
 
+
+
+
+function checkField(){
+    if($('.modal__checkbox-box').prop("checked") == false){
+        $('.modal__label-checkbox').css({color: "red"});
+        return false;
+    }else{
+        $('.modal__label-checkbox').css({color: "#4B5157"});
+    }
+};
+
+
+$('.modal__checkbox-box').change(function() {
+    if ($(this).is(':checked')) {
+        $('.modal__label-checkbox').css({color: "#4B5157"});
+    }else{
+        $('.modal__label-checkbox').css({color: "red"});
+    }
+});
+
+
 $(document).ready(function(){
     $('.form-validation').each( function() {
       $(this).validate({
@@ -128,7 +150,11 @@ $(document).ready(function(){
         },
       });
     });
+    
 });
+
+
+
 
 $('.money__button').click(function(){
     window.location.href = "https://anastasia-petrova.com/universal/article.html";
@@ -171,4 +197,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-  
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 

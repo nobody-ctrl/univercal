@@ -8,10 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">   -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
 
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="preload" href="css/normalize.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="css/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
     <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
 
 
@@ -96,9 +101,9 @@
             </div>
             <!-- /.header__logo -->
             <div class="header__navbar">
-                <a href="#" class="header__navbar-link header__navbar-link-cyrillic">Статьи</a>
-                <a href="#" class="header__navbar-link header__navbar-link-cyrillic">Новости</a>
-                <a href="#" class="header__navbar-link header__navbar-link-cyrillic">Курсы</a>
+                <a href="#articles" class="header__navbar-link header__navbar-link-cyrillic">Статьи</a>
+                <a href="#news" class="header__navbar-link header__navbar-link-cyrillic">Новости</a>
+                <a href="#courses" class="header__navbar-link header__navbar-link-cyrillic">Курсы</a>
                 <a href="#" class="header__navbar-link">HTML</a>
                 <a href="#" class="header__navbar-link">CSS</a>
                 <a href="#" class="header__navbar-link">JavaScript</a>
@@ -288,7 +293,7 @@
         <!-- /.container -->
     </section>
     <!-- /.main-themes -->
-    <section class="others">
+    <section id="articles" class="others">
         <div class="container others__container">
             <a href="#" class="others__links grid-one">
                 <div class="others__first">
@@ -306,12 +311,12 @@
                                 Как поступить, если хочется пойти на работу мечты, но она находится в другом городе. У вас семья и переезжать вы не готовы. 
                             </span>
                         </div>
-                        <img data-src="img/car.png" alt="Icon: car" class="lazy others__first-img">
+                        <img data-src="img/car.png" src="#" alt="Icon: car" class="lazy others__first-img">
                     </div>
                     <!-- /.others__first-one -->
                     <div class="others__first-devide"></div>
                     <div class="others__first-comment">
-                        <img data-src="img/avatar-others.png" alt="Icon: avatar" class="lazy others__first-avatar">
+                        <img src="#" data-src="img/avatar-others.png" alt="Icon: avatar" class="lazy others__first-avatar">
                         <div class="others__first-decr">
                             <span class="others__first-decr-first">Инна Квашова: </span>
                             <span class="others__first-decr-second">Каждый разработчик мечтает переехать в тут идет продолжение текста, так что можно написать все, что угодно</span>
@@ -469,7 +474,7 @@
             <!-- /.others__forth -->
             <a href="#" class="others__links grid-five">
                 <div class="others__fifth fifth">
-                    <img data-src="img/others-fifth.png" alt="Icon: article picture" class="lazy fifth__img">
+                    <img src="#" data-src="img/others-fifth.png" alt="Icon: article picture" class="lazy fifth__img">
                     <div class="fifth__text">
                         20+ инструментов для js-разработчика
                     </div>
@@ -576,14 +581,14 @@
         <!-- /.container -->
     </section>
     <!-- /.money -->
-    <section class="news">
+    <section id="news" class="news">
         <div class="container news__container">
             <div class="news__first">
                 <div class="news__post">
                     <svg class="news__book" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="news__book-color" fill-rule="evenodd" clip-rule="evenodd" d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z" fill="#BCBFC2"/>
                     </svg>
-                    <img data-src="img/post-one.png" alt="Icon: post image" class="lazy news__post-img">
+                    <img src="#" data-src="img/post-one.png" alt="Icon: post image" class="lazy news__post-img">
                     <a href="#" class="news__link">
                         <div class="news__post-descr post">
                             <div class="post__type post__type-first">Новости</div>
@@ -618,7 +623,7 @@
                     <svg class="news__book" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="news__book-color" fill-rule="evenodd" clip-rule="evenodd" d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z" fill="#BCBFC2"/>
                     </svg>
-                    <img data-src="img/post-two.png" alt="Icon: post image" class="lazy news__post-img">
+                    <img src="#" data-src="img/post-two.png" alt="Icon: post image" class="lazy news__post-img">
                     <a href="#" class="news__link">
                         <div class="news__post-descr post">
                             <div class="post__type post__type-second">Мнения</div>
@@ -651,7 +656,7 @@
                     <svg class="news__book" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="news__book-color" fill-rule="evenodd" clip-rule="evenodd" d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z" fill="#BCBFC2"/>
                     </svg>
-                    <img data-src="img/post-three.png" alt="Icon: post image" class="lazy news__post-img">
+                    <img src="#" data-src="img/post-three.png" alt="Icon: post image" class="lazy news__post-img">
                     <a href="#" class="news__link">
                             <div class="news__post-descr post">
                                 <div class="post__type post__type-third">Горячее</div>
@@ -684,7 +689,7 @@
                     <svg class="news__book" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="news__book-color" fill-rule="evenodd" clip-rule="evenodd" d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z" fill="#BCBFC2"/>
                     </svg>
-                    <img data-src="img/post-four.png" alt="Icon: post image" class="lazy news__post-img">
+                    <img src="#" data-src="img/post-four.png" alt="Icon: post image" class="lazy news__post-img">
                     <a href="#" class="news__link">
                             <div class="news__post-descr post">
                                 <div class="post__type post__type-forth">Мнения</div>
@@ -717,7 +722,7 @@
                     <svg class="news__book" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="news__book-color" fill-rule="evenodd" clip-rule="evenodd" d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z" fill="#BCBFC2"/>
                     </svg>
-                    <img data-src="img/post-five.png" alt="Icon: post image" class="lazy news__post-img">
+                    <img src="#" data-src="img/post-five.png" alt="Icon: post image" class="lazy news__post-img">
                     <a href="#" class="news__link">
                             <div class="news__post-descr post">
                                 <div class="post__type post__type-fifth">Горячее</div>
@@ -751,7 +756,7 @@
                     <svg class="news__book" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="news__book-color" fill-rule="evenodd" clip-rule="evenodd" d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z" fill="#BCBFC2"/>
                     </svg>
-                    <img data-src="img/post-six.png" alt="Icon: post image" class="lazy news__post-img">
+                    <img src="#" data-src="img/post-six.png" alt="Icon: post image" class="lazy news__post-img">
                     <a href="#" class="news__link">
                             <div class="news__post-descr post">
                                 <div class="post__type post__type-six">Подборки</div>
@@ -789,7 +794,7 @@
                 <div class="seconds__container">
                     <a href="#" class="seconds__post-link">
                         <div class="seconds__post">
-                            <img data-src="img/post-small-one.png" alt="Icon: post small" class="lazy seconds__img">
+                            <img src="#" data-src="img/post-small-one.png" alt="Icon: post small" class="lazy seconds__img">
                             <div class="seconds__descr-block">
                                 <div class="seconds__descr">
                                     Работа на удаленке, как это теперь
@@ -803,7 +808,7 @@
                     <div class="seconds__devide"></div>
                     <a href="#" class="seconds__post-link">
                         <div class="seconds__post">
-                            <img data-src="img/post-small-two.png" alt="Icon: post small" class="lazy seconds__img">
+                            <img src="#" data-src="img/post-small-two.png" alt="Icon: post small" class="lazy seconds__img">
                             <div class="seconds__descr-block">
                                 <div class="seconds__descr">
                                     Для чего нужен Node.js и с чем...
@@ -817,7 +822,7 @@
                     <div class="seconds__devide"></div>
                     <a href="#" class="seconds__post-link">
                         <div class="seconds__post">
-                            <img data-src="img/post-small-three.png" alt="Icon: post small" class="lazy seconds__img">
+                            <img src="#" data-src="img/post-small-three.png" alt="Icon: post small" class="lazy seconds__img">
                             <div class="seconds__descr-block">
                                 <div class="seconds__descr">
                                     Работа в Google: собеседования и что-то еще
@@ -831,7 +836,7 @@
                     <div class="seconds__devide"></div>
                     <a href="#" class="seconds__post-link">
                         <div class="seconds__post">
-                            <img data-src="img/post-small-four.png" alt="Icon: post small" class="lazy seconds__img">
+                            <img src="#" data-src="img/post-small-four.png" alt="Icon: post small" class="lazy seconds__img">
                             <div class="seconds__descr-block">
                                 <div class="seconds__descr">
                                     Переезд в Нью Йорк для работы по...
@@ -845,7 +850,7 @@
                     <div class="seconds__devide"></div>
                     <a href="#" class="seconds__post-link">
                         <div class="seconds__post">
-                            <img data-src="img/post-small-five.png" alt="Icon: post small" class="lazy seconds__img">
+                            <img src="#" data-src="img/post-small-five.png" alt="Icon: post small" class="lazy seconds__img">
                             <div class="seconds__descr-block">
                                 <div class="seconds__descr">
                                     Почему родители против того, чтобы что-то еще тут
@@ -859,7 +864,7 @@
                     <div class="seconds__devide"></div>
                     <a href="#" class="seconds__post-link">
                         <div class="seconds__post">
-                            <img data-src="img/post-small-six.png" alt="Icon: post small" class="lazy seconds__img">
+                            <img src="#" data-src="img/post-small-six.png" alt="Icon: post small" class="lazy seconds__img">
                             <div class="seconds__descr-block">
                                 <div class="seconds__descr">
                                     Прокрастинация:  побороть отклады вать на потом
@@ -873,7 +878,7 @@
                     <div class="seconds__devide"></div>
                     <a href="#" class="seconds__post-link">
                         <div class="seconds__post">
-                            <img data-src="img/post-small-seven.png" alt="Icon: post small" class="lazy seconds__img">
+                            <img src="#" data-src="img/post-small-seven.png" alt="Icon: post small" class="lazy seconds__img">
                             <div class="seconds__descr-block">
                                 <div class="seconds__descr">
                                     Правки от заказчика могут быть...
@@ -898,7 +903,7 @@
         <!-- /.container -->
     </section>
     <!-- /.news -->
-    <section class="another">
+    <section id="courses" class="another">
         <div class="container another__container">
             <div class="another__first">
                 <div class="swiper-container">
@@ -907,7 +912,7 @@
                         <!-- Slides -->
                         <div class="swiper-slide first-slide slide">
                             <span class="slide__cat">Горячее</span>
-                            <img data-src="img/slide-avatar.png" alt="Icon: avatar" class="lazy slide__avatar">
+                            <img src="#" data-src="img/slide-avatar.png" alt="Icon: avatar" class="lazy slide__avatar">
                             <span class="slide__name">Оксана Пушкина</span>
                             <span class="slide__how">Фотограф</span>
                             <div class="slide__title">
@@ -921,7 +926,7 @@
                         </div>
                         <div class="swiper-slide second-slide slide">
                             <span class="slide__cat">Новости</span>
-                            <img data-src="img/one.jpg" alt="Icon: avatar" class="lazy slide__avatar">
+                            <img src="#" data-src="img/one.jpg" alt="Icon: avatar" class="lazy slide__avatar">
                             <span class="slide__name">Анастасия Егорова</span>
                             <span class="slide__how">Блогер</span>
                             <div class="slide__title">
@@ -935,7 +940,7 @@
                         </div>
                         <div class="swiper-slide third-slide slide">
                             <span class="slide__cat">Горячее</span>
-                            <img data-src="img/two.jpg" alt="Icon: avatar" class="lazy slide__avatar">
+                            <img src="#" data-src="img/two.jpg" alt="Icon: avatar" class="lazy slide__avatar">
                             <span class="slide__name">Мария Жукова</span>
                             <span class="slide__how">Студентка</span>
                             <div class="slide__title">
@@ -949,7 +954,7 @@
                         </div>
                         <div class="swiper-slide forth-slide slide">
                             <span class="slide__cat">Подборка</span>
-                            <img data-src="img/three.jpg" alt="Icon: avatar" class="lazy slide__avatar">
+                            <img src="#" data-src="img/three.jpg" alt="Icon: avatar" class="lazy slide__avatar">
                             <span class="slide__name">Ирина Петрова</span>
                             <span class="slide__how">Активистка</span>
                             <div class="slide__title">
@@ -963,7 +968,7 @@
                         </div>
                         <div class="swiper-slide fifth-slide slide">
                             <span class="slide__cat">Новости</span>
-                            <img data-src="img/four.jpg" alt="Icon: avatar" class="lazy slide__avatar">
+                            <img src="#" data-src="img/four.jpg" alt="Icon: avatar" class="lazy slide__avatar">
                             <span class="slide__name">Александра Икрамова</span>
                             <span class="slide__how">Путешественник</span>
                             <div class="slide__title">
@@ -1143,6 +1148,7 @@
         </div>
     </footer>
     <!-- /.footer -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div class="modal">
         <div class="modal__overlay">
 
@@ -1153,7 +1159,7 @@
                 <img src="img/close.svg" alt="icon: close">
             </span>
             <h3 class="modal__title">Обратная связь</h3>
-            <form action="send.php" method="post" id="modal__form" class="modal__form form-validation">
+            <form action="send.php" method="post" id="modal__form" class="modal__form form-validation" onsubmit="return checkField();">
                 <label class="modal__label">Тема</label>
                 <div class="modal__theme">
                     <select class="modal__theme-select" name="theme" required>
@@ -1169,10 +1175,10 @@
                <label class="modal__label">Email</label>
                <input type="email" class="input modal__input" name="emails" required>
                <div class="modal__checkbox">
-                    <input type="checkbox" class="modal__checkbox-box" id="checkbox" name="agree">
+                    <input type="checkbox" class="modal__checkbox-box" id="checkbox" name="agree" required>
                     <label class="modal__label-checkbox" for="checkbox">Согласен с обработкой данных</label>
                 </div>
-                <button class="button modal__button" type="Submit">Отправить</button>
+                <button class="button modal__button" type="submit">Отправить</button>
             </form>
         </div>
         <!-- /.modal__dialog -->

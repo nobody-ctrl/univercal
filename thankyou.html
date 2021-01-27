@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Издательство Universal</title>
-    <link rel="stylesheet" href="css/normalize.min.css">
+    <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
+
+    <link rel="preload" href="css/normalize.min.css" as="style" onload="this.rel='stylesheet'">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/atricle-style.css">
+
 
     <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
 
@@ -135,13 +139,13 @@
             </div>
             <!-- /.header__logo -->
             <div class="header__navbar">
-                <a href="#" class="header__navbar-link header__navbar-link-cyrillic">Статьи</a>
-                <a href="#" class="header__navbar-link header__navbar-link-cyrillic">Новости</a>
-                <a href="#" class="header__navbar-link header__navbar-link-cyrillic">Курсы</a>
-                <a href="#" class="header__navbar-link">HTML</a>
-                <a href="#" class="header__navbar-link">CSS</a>
-                <a href="#" class="header__navbar-link">JavaScript</a>
-                <a href="#" class="header__navbar-link">Web Design</a>
+                <a href="index.html#articles" class="header__navbar-link header__navbar-link-cyrillic">Статьи</a>
+                <a href="index.html#news" class="header__navbar-link header__navbar-link-cyrillic">Новости</a>
+                <a href="index.html#courses" class="header__navbar-link header__navbar-link-cyrillic">Курсы</a>
+                <a href="index.html" class="header__navbar-link">HTML</a>
+                <a href="index.html" class="header__navbar-link">CSS</a>
+                <a href="index.html" class="header__navbar-link">JavaScript</a>
+                <a href="index.html" class="header__navbar-link">Web Design</a>
             </div>
             <!-- /.header__navbar -->
             <div class="header__search">
@@ -307,6 +311,7 @@
         </div>
     </footer>
     <!-- /.footer -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div class="modal">
         <div class="modal__overlay">
 
@@ -317,7 +322,7 @@
                 <img src="img/close.svg" alt="icon: close">
             </span>
             <h3 class="modal__title">Обратная связь</h3>
-            <form action="send.php" method="post" id="modal__form" class="modal__form form-validation">
+            <form action="send.php" method="post" id="modal__form" class="modal__form form-validation" onsubmit="return checkField();">
                 <label class="modal__label">Тема</label>
                 <div class="modal__theme">
                     <select class="modal__theme-select" name="theme" required>
@@ -333,10 +338,10 @@
                <label class="modal__label">Email</label>
                <input type="email" class="input modal__input" name="emails" required>
                <div class="modal__checkbox">
-                    <input type="checkbox" class="modal__checkbox-box" id="checkbox" name="agree">
+                    <input type="checkbox" class="modal__checkbox-box" id="checkbox" name="agree" required>
                     <label class="modal__label-checkbox" for="checkbox">Согласен с обработкой данных</label>
                 </div>
-                <button class="button modal__button" type="Submit">Отправить</button>
+                <button class="button modal__button" type="submit">Отправить</button>
             </form>
         </div>
         <!-- /.modal__dialog -->

@@ -141,6 +141,10 @@
             position: absolute
             left: 0
     &__checkbox-box:checked + &__label-checkbox::before
-        background-image: url('../img/clicked.svg')
-        background-position: center center
-        background-repeat: no-repeat
+        background-image: url('../img/clicked.svg') !important
+        background-position: center center !important
+        background-repeat: no-repeat !important
+    &__checkbox > .message-box-modal
+        display: none !important
+        &:first-child
+            display: block !important
