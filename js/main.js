@@ -163,16 +163,16 @@ $('.text-block__third').click(function(){
     window.location.href = "https://anastasia-petrova.com/universal/article.html";
 });
 
-//here is lazy loading technuique
+// //here is lazy loading technuique
 document.addEventListener("DOMContentLoaded", function() {
     var lazyloadImages = document.querySelectorAll("img.lazy");    
     var lazyloadThrottleTimeout;
-    
-    function lazyload () {
+
+     function lazyload () {
       if(lazyloadThrottleTimeout) {
         clearTimeout(lazyloadThrottleTimeout);
       }    
-      
+   
       lazyloadThrottleTimeout = setTimeout(function() {
           var scrollTop = window.pageYOffset;
           lazyloadImages.forEach(function(img) {
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 img.src = img.dataset.src;
                 img.classList.remove('lazy');
               }
-          });
+         });
           if(lazyloadImages.length == 0) { 
             document.removeEventListener("scroll", lazyload);
             window.removeEventListener("resize", lazyload);
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function() {
           }
       }, 20);
     }
-    
+ 
     document.addEventListener("scroll", lazyload);
     window.addEventListener("resize", lazyload);
     window.addEventListener("orientationChange", lazyload);
@@ -231,33 +231,10 @@ $(document).ready(function(){
         function() 
         {
             $('.first-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('./img/another-first.jpg')"});
+            $('.second-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('./img/another-second.jpg')"});
+            $('.third-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('./img/another-three.jpg')"});
+            $('.forth-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('./img/another-four.jpg')"});
+            $('.fifth-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('./img/another-five.jpg')"});
         }, 3000);
-    setTimeout(
-        function() 
-        {
-            $('.second-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-second.jpg')"});
-         }, 3000);
-     setTimeout(
-         function() 
-         {
-             $('.third-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-three.jpg')"});
-         }, 3000);
-     setTimeout(
-         function() 
-         {
-             $('.forth-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-four.jpg')"});
-         }, 3000);
-     setTimeout(
-         function() 
-         {
-             $('.fifth-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-five.jpg')"});
-         }, 3000);
+    
 });
-
-
-
-
-
-
-
-
