@@ -216,3 +216,48 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
+
+
+
+//load spater
+$(document).ready(function(){
+    setTimeout(
+        function() 
+        {
+            var elem = $('.load-spater').attr('data-src');
+            $('.load-spater').attr({'src' : elem});
+        }, 400);
+    setTimeout(
+        function() 
+        {
+            $('.first-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('./img/another-first.jpg')"});
+        }, 3000);
+    setTimeout(
+        function() 
+        {
+            $('.second-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-second.jpg')"});
+         }, 3000);
+     setTimeout(
+         function() 
+         {
+             $('.third-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-three.jpg')"});
+         }, 3000);
+     setTimeout(
+         function() 
+         {
+             $('.forth-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-four.jpg')"});
+         }, 3000);
+     setTimeout(
+         function() 
+         {
+             $('.fifth-slide').css({"background" : "linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url('../img/another-five.jpg')"});
+         }, 3000);
+});
+
+
+
+
+
+
+
+

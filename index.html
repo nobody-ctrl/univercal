@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Издательство Universal</title>
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">   -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
 
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/jwe0grg.css"> -->
 
-    <link rel="preload" href="css/normalize.min.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="css/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="fonts/Lato/Lato-Black.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/Lato/Lato-Bold.ttf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/Lato/Lato-Regular.ttf" as="font" crossorigin="anonymous" />
+    <!-- <link rel="preload" href="fonts/Lato/Lato-Light.ttf" as="font" crossorigin="anonymous" /> -->
+
 
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="css/normalize.min.css">
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
 
 
@@ -23,32 +24,32 @@
         /* This is Lato font */
 
         /* latin */
-        @font-face {
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
+        /* @font-face { */
+        /* font-family: 'Lato'; */
+        /* font-style: normal; */
+        /* font-weight: 400; */
+        /* font-display: swap; */
+        /* src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXg.woff2) format('woff2'); */
+        /* /* unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; */ 
+        /* } */
         /* latin */
-        @font-face {
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 700;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
+        /* @font-face { */
+        /* font-family: 'Lato'; */
+        /* font-style: normal; */
+        /* font-weight: 700; */
+        /* font-display: swap; */
+        /* src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2'); */
+        /* /* unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; */ 
+        /* } */
         /* latin */
-        @font-face {
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 900;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPGQ.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
+        /* @font-face { */
+        /* font-family: 'Lato'; */
+        /* font-style: normal; */
+        /* font-weight: 900; */
+        /* font-display: swap; */
+        /* src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPGQ.woff2) format('woff2'); */
+        /* /* unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; */ 
+        /* } */
 
         /* This is Roboto Slab font */
         /* cyrillic */
@@ -149,7 +150,7 @@
     <section class="hero">
         <div class="container hero__container">
             <div class="hero__left-block">
-                <img src="img/hero-image.jpg" alt="Image: main logo" class="hero__image">
+                <img data-src="img/hero-image.jpg" src="#" alt="Image: main logo" class="load-spater hero__image">
                 <div class="hero__left-block-avatar avatar-block">
                     <a href="#" class="avatar-block__link">
                         <img src="img/avatar.png" alt="Icon: avatar" class="avatar-block__img">
